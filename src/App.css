@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'TTHakgyoansimEunhasuR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimEunhasuR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  font-family: 'TTHakgyoansimEunhasuR';
+  font-size: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 90px;
+}
+
+.logo {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 추가 버튼 스타일 */
+.add-button, .UIset {
+  font-family: 'TTHakgyoansimEunhasuR';
+  font-size: 30px;
+  padding: 10px 20px;
+  color: white;
+  background: linear-gradient(45deg, #f0bbf8, #a9c6f8); /* 그라데이션 배경 */
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* 부드러운 전환 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+/* 버튼 마우스 오버 효과 */
+.add-button:hover, .UIset:hover {
+  background: linear-gradient(45deg, #ff9add, #55a2fa); /* 그라데이션 반전 */
+  transform: translateY(-2px); /* 살짝 위로 올라가는 효과 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 그림자 확대 */
+}
+
+.learning-rate {
+  text-align: center;
+  position: absolute;
+  right: 300px;
+  top: 100px;
+  transform: translateY(-50%);
+}
+
+/* 제목 및 설명 입력칸 스타일 */
+input[type="text"], textarea {
+  width: 90%; /* 입력칸 너비를 최대한 넓게 설정 */
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'TTHakgyoansimEunhasuR'; /* 폰트 적용 */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+/* 텍스트박스 크기 조절 기능 제거 */
+textarea {
+  resize: none; /* 크기 조절 비활성화 */
+}
+
+/* 입력칸 포커스 시 스타일 */
+input[type="text"]:focus, textarea:focus {
+  outline: none;
+  border-color: #a9c6f8; /* 포커스 시 경계 색상 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 포커스 시 그림자 효과 */
+  background-color: #f9f9ff; /* 포커스 시 배경 색상 */
+}
+
+.submit-button {
+  font-family: 'TTHakgyoansimEunhasuR';
+  font-size: 20px;
+  padding: 10px 20px;
+  color: white;
+  background: linear-gradient(45deg, #f0bbf8, #a9c6f8); /* 그라데이션 배경 */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto 0; /* 버튼을 아래 가운데 정렬 */
+  display: block;
+}
+
+/* 제출 버튼 호버 효과 */
+.submit-button:hover {
+  background: linear-gradient(45deg, #ff9add, #55a2fa);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
